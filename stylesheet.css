@@ -1,0 +1,141 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    padding:0px;
+    margin:0px;
+}
+.theme.light{
+    background-color: #198754;
+}
+.container{
+    height: 100vh;
+    background-color: #212534;
+    display: flex;
+    flex-direction: column;
+}
+.container.light{
+    background-color: #198754;
+}
+.profile--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar--container img{
+    width: 170px;
+    padding-top: 20px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+.info--container h1{
+    color: #eee;
+    padding-bottom: 20px;
+}
+.info--container h3{
+    font-weight: 300px;
+    color: #eee;
+}
+.info--container a{
+    cursor: pointer;
+    color: rgba(0, 0, 255, 0.926);
+}
+.info--container h3 span{
+    font-weight: 600px;
+    padding-right: 8px;
+}
+.separator{
+    width: 100%;
+    height: 1px;
+    background-color: #888888;
+    margin: 10px 0px 10px 0px;
+}
+.name--calculator{
+    display: flex;
+    justify-content: center;
+}
+.name--calculator input{
+    margin-top: 15px;
+    height: 20px;
+    border-radius: 4px;
+    text-indent: 35px;
+}
+.name--calculator a{
+    margin-top: 15px;
+    height: 20px;
+}
+#submit--btn{
+    background-color: #198754;
+    margin-top: 15px;
+    padding: 2.5px 5px 2.5px 5px;
+    border-radius: 4px;
+    margin-left: 25px;
+    cursor: pointer;
+    color: #eee;
+}
+#plus--sign{
+    font-size: 20px;
+    padding: 0px 20px 0px 20px;
+    font-weight: 600;
+    color: #eee;
+}
+.results--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    color: #eee;
+}
+.username--container{
+    width: 300px;
+    height: 174px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    right: 40%;
+    background-color: #888888;
+    border-radius: 10px;
+    margin-top: 50px;
+    flex-direction: column;
+}
+.username--container.hide{
+    transition: 1.9s ease-in;
+    transform: translateY(-300px);
+}
+.username--container form {
+    padding: 0px 10px 6px 10px;
+}
+.username--container form p{
+    font-size: 18px;
+}
+.username--container form p span{
+    font-size: 20px;
+    color: #22db20;
+    text-shadow: #02fb87 10px 10px ;
+}
+.username--container form input{
+    height: 30px;
+    border-radius: 6px;
+    text-indent: 5px;
+    width: -webkit-fill-available;
+}
+.username--container a{
+    width: 270px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #198754;
+    color: #eee;
+    cursor: pointer;
+    margin-top: 10px;
+    margin: 5px 12px 10px 12px;
+}
+.username--container a p{
+    font-size: 20px;
+    padding: 0px 0px 0px 115px;
+}
+
+.user--message.fun{
+    font-size: 45px;
+    color: #9acbf6;
+    transform: 0.7s ease;
+}
