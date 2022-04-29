@@ -36,7 +36,7 @@ html, body {
 }
 .info--container a{
     cursor: pointer;
-    color: rgba(0, 0, 255, 0.926);
+    color: rgb(39 39 235 / 93%);
 }
 .info--container h3 span{
     font-weight: 600px;
@@ -204,6 +204,9 @@ input:checked + .slider:before {
     }
     .name--calculator{
         flex-wrap: wrap;
+    }
+    .profile--container {
+        padding-top: 10px;
     }
 }
 @media (max-width: 540px){
