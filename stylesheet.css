@@ -75,14 +75,14 @@ html, body {
     font-size: 20px;
     padding: 0px 20px 0px 20px;
     font-weight: 600;
-    color: #eee;
+    color: #198754;
 }
 .results--container{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 90px;
-    color: #eee;
+    color: #198754;
 }
 .username--container{
     width: 300px;
