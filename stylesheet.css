@@ -4,17 +4,16 @@ html, body {
     padding:0px;
     margin:0px;
 }
-.theme.light{
-    background-color: #198754;
-}
 .container{
     height: 100vh;
     background-color: #212534;
     display: flex;
     flex-direction: column;
+    color: #eee;
 }
-.container.light{
-    background-color: #198754;
+.light{
+    background-color: #eee;
+    color: black;
 }
 .profile--container{
     display: flex;
@@ -28,12 +27,12 @@ html, body {
     margin-right: 50px;
 }
 .info--container h1{
-    color: #eee;
+    font-family: exo;
     padding-bottom: 20px;
 }
 .info--container h3{
     font-weight: 300px;
-    color: #eee;
+    font-family: exo;
 }
 .info--container a{
     cursor: pointer;
@@ -91,12 +90,12 @@ html, body {
     position: absolute;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     right: 40%;
     background-color: #888888;
     border-radius: 10px;
     margin-top: 50px;
     flex-direction: column;
+    z-index: 100;
 }
 .username--container.hide{
     transition: 1.9s ease-in;
@@ -136,6 +135,168 @@ html, body {
 
 .user--message.fun{
     font-size: 45px;
-    color: #9acbf6;
+    color: #626bb6;
     transform: 0.7s ease;
+    padding: 20px;
+}
+/* -------------------------------------- */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    left: 20px;
+    top: 20px;
+    z-index: 10px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}  
+ /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 2px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #2196F3;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+/* making this simple site responsive */
+
+@media (max-width: 768px){
+    .username--container{
+        right: 32%;
+    }
+    .name--calculator{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 540px){
+    .username--container{
+        right: 22%;
+    }
+    .avatar--container img {
+        width: 115px;
+        border-radius: 50%;
+        margin-right: 33px;
+    }
+    .info--container h1 {
+        font-size: 29px;
+        padding-bottom: 5px;
+    }
+    .info--container h3 {
+        font-size: 17px;
+    }
+    .user--message.fun {
+        font-size: 35px;
+        padding: 16px;
+    }
+}
+@media (max-width: 425px){
+    .username--container{
+        right: 14%;
+    }
+    .avatar--container img {
+        width: 115px;
+        border-radius: 50%;
+        margin-right: 33px;
+    }
+    .info--container h1 {
+        font-size: 25px;
+        padding-bottom: 5px;
+    }
+    .info--container h3 {
+        font-size: 16px;
+    }
+    #submit--btn {
+        margin-top: 7px;
+        margin-left: 0px;
+    }
+}
+@media (max-width: 400px){
+    #submit--btn {
+        margin-top: 7px;
+        margin-left: 0px;
+    }
+    .name--calculator input {
+        margin-top: 15px;
+        width: 150px;
+        height: 20px;
+        border-radius: 4px;
+        text-indent: 20px;
+    }
+}
+@media (max-width: 375px){
+    .username--container{
+        right: 9%;
+    }
+    .avatar--container img {
+        width: 115px;
+        border-radius: 50%;
+        margin-right: 33px;
+    }
+    .info--container h1 {
+        font-size: 22px;
+        padding-bottom: 3px;
+    }
+    .info--container h3 {
+        font-size: 13px;
+    }
+    .name--calculator input {
+        margin-top: 15px;
+        width: 150px;
+        height: 20px;
+        border-radius: 4px;
+        text-indent: 20px;
+    }
+}
+
+@media (max-width: 368px){
+    #submit--btn {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .name--calculator input {
+        width: 130px;
+        text-indent: 13px;
+    }
+    .user--message.fun {
+        font-size: 30px;
+        padding: 15px;
+    }
 }

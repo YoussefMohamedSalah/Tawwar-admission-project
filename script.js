@@ -8,8 +8,8 @@ function getInputValue(){
     if(firstinputVal && secondinputVal >= 0){
         let results = Number(firstinputVal) + Number(secondinputVal);
         document.querySelector('#results').innerHTML = results;
-        alert(`the answer of ${firstinputVal} + ${secondinputVal} is ${results}`)
-        console.log('two numbers')
+        // alert(`the answer of ${firstinputVal} + ${secondinputVal} is ${results}`)
+        // console.log('two numbers')
     }else{
         document.querySelector('#results').innerHTML = `I'm SOO Sorry, try Numbers This Time`;
     };
@@ -18,7 +18,7 @@ function getInputValue(){
 // --------------------------------------------------------------------------------------------------------------
 // Light and dark Theme
 let theme = document.querySelector(".container");
-const switchTheme = document.getElementById("swith--btn");
+const switchTheme = document.getElementById("switch--theme");
 
 switchTheme.addEventListener("click", (e) =>{
     theme.classList.toggle("light");
@@ -54,3 +54,5 @@ function getUserName(){
 window.addEventListener('click', function hideGreeting(){
     document.querySelector('.user--message').innerHTML = "";
 },10);
+// ----------------------
+console.clear();
